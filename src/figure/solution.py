@@ -11,7 +11,7 @@ def solution(entry):
     elif entry == 7:
         result = "heptagono"
     elif entry == 8:
-        result = "octogono"
+        result = "octagono"
     elif entry == 9:
         result = "eneagono"
     elif entry == 10:
