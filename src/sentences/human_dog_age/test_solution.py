@@ -1,4 +1,4 @@
-from src.human_dog_age.solution import solution
+from src.sentences.human_dog_age.solution import solution
 
 def test_solution():
     #Test case 1

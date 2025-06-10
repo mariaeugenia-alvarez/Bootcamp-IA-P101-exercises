@@ -1,4 +1,4 @@
-from src.figure.solution import solution
+from src.sentences.figure.solution import solution
 
 def test_solution():
     #Test case 
