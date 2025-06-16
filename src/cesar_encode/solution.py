@@ -21,11 +21,19 @@ def to_string(numbers_list, dictionary):
 
    return chain
 
+def encrypt(number_list,step,global_dictionary):
+   encrypt_number_list=[]
+   length=len(global_dictionary)
+   for number in number_list:
+      if isinstance(number,int) == False:
+         encrypt_number = number      
+      else:
+         encrypt_number = (number + step) % length
+      encrypt_number_list.append(encrypt_number)
+   return encrypt_number_list
 
 def transpose(literal,step):
-      
       literal_list=list(literal)
       number_list = to_numbers(literal_list, global_dictionary)
-      #cifrar
-
-      return  to_string(number_list, global_dictionary)
+      encrypt_list = encrypt(number_list,step,global_dictionary)
+      return  to_string(encrypt_list, global_dictionary)
