@@ -4,6 +4,8 @@ def test_solution():
     #Test case
     #assert transpose("zig zag",2) == "bki bci"
     assert to_numbers("zig", global_dictionary) == [26,8,6]
+    assert to_numbers("zig zag", global_dictionary) == [26,8,6," ",26,0,6]
     assert to_string([26,8,6], global_dictionary) == "zig"
+    assert to_string([26,8,6," ",26,0,6], global_dictionary) == "zig zag"
     assert to_string(to_numbers("zig", global_dictionary), global_dictionary) == "zig"
     assert to_numbers(to_string([26,8,6], global_dictionary), global_dictionary) == [26,8,6]
