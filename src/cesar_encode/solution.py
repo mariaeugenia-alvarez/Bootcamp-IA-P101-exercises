@@ -39,8 +39,10 @@ def transpose(literal,step):
       return  to_string(encrypt_list, global_dictionary)
 
 if __name__ == '__main__': 
+   while True:
+      next_input=input("Entry a number or enter to end: ")
+      if next_input == "":
+         break
+      step =input("Entry distance: ")
 
-   next_input=input("Entry a number or enter to end: ")
-   step =input("Entry distance: ")
-
-   print(transpose(next_input,int(step)))
+      print(transpose(next_input,int(step)))
