@@ -37,3 +37,10 @@ def transpose(literal,step):
       number_list = to_numbers(literal_list, global_dictionary)
       encrypt_list = encrypt(number_list,step,global_dictionary)
       return  to_string(encrypt_list, global_dictionary)
+
+if __name__ == '__main__': 
+
+   next_input=input("Entry a number or enter to end: ")
+   step =input("Entry distance: ")
+
+   print(transpose(next_input,int(step)))
