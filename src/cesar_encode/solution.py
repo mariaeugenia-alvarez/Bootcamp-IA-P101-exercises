@@ -10,15 +10,22 @@ def to_numbers(literal_list, dictionary):
       number_list.append(number)
    return number_list
 
-def to_string(numbers_list):
-   return []
+def to_string(numbers_list, dictionary):
+   chain=""
+   for number in numbers_list: 
+      if isinstance(number,int):
+         char=dictionary[number]
+      else:
+         char=number
+      chain+=char
+
+   return chain
 
 
 def transpose(literal,step):
       
       literal_list=list(literal)
-      number_list = to_numbers(literal_list, dictionary=global_dictionary)
+      number_list = to_numbers(literal_list, global_dictionary)
       #cifrar
-      string_list = to_string(number_list)
 
-      return ("bki bci")
+      return  to_string(number_list, global_dictionary)
