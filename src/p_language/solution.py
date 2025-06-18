@@ -12,4 +12,4 @@ def p_sentence(sentence):
     new_sentence=""
     for char in sentence:    
         new_sentence += convert_char(char)
-    return "Bapasipicopo"
+    return new_sentence
