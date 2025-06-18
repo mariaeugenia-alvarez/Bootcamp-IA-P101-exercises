@@ -5,3 +5,5 @@ def test_solution():
     assert convert_char("i") == "ipi"
     assert convert_char("B") == "B"
     assert p_sentence("Basico") == "Bapasipicopo"
+    assert p_sentence("Raro") == "Raparopo"
+    assert p_sentence("Hola mundo") == "Hopolapa mupundopo"

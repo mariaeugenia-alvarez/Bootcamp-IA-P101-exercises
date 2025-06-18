@@ -10,6 +10,6 @@ def convert_char(char):
 
 def p_sentence(sentence):
     new_sentence=""
-    for char in sentence:    
-        new_sentence += convert_char(char)
+    for letter in sentence:    
+        new_sentence += convert_char(letter)
     return new_sentence
