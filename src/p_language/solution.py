@@ -1,11 +1,7 @@
 def convert_char(char):
-    
     if char == "a":
         new_char = "apa"
     return new_char
-
-
-
 
 
 
