@@ -1,9 +1,11 @@
 def convert_char(char):
-    if char == "a":
-        new_char = "apa"
+    new_char = char
+    vowel = "aeiou"
+    for i in range(len(vowel)):
+      if char == vowel[i]:
+         new_char = vowel[i] + "p" + vowel[i]
+         break
     return new_char
-
-
 
 
 def p_sentence(sentence):
