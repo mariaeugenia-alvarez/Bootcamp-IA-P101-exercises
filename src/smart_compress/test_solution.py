@@ -5,3 +5,4 @@ def test_solution():
     assert accumulate("o",2) == "oo"
     assert chain_compress("hhhoollllla") == "h3ool5a"
     assert chain_compress("hhhoollllaa") == "h3ool4aa"
+    assert chain_compress("hhhoolllaaa") == "h3ool3a3"
