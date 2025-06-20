@@ -12,42 +12,61 @@ global_mobile_dictionary = {
 }
 
 
-def to_key_press(char, mobile_dictionary):
+def to_key_press_text(char, mobile_dictionary):
     for key_num in mobile_dictionary.keys():
         for index_letter in range(len(mobile_dictionary[key_num])):
             if char == mobile_dictionary[key_num][index_letter]:
                 return str(key_num) * (index_letter + 1)
 
 
+def to_key_press_number(digit, mobile_dictionary):
+    for key_num in mobile_dictionary.keys():
+        if int(digit[0]) == key_num:
+            return mobile_dictionary[key_num][len(digit) - 1]
+    return ""
+
+
 def convert_text_to_number(msg):
     message = ""
     for letter in msg:
-        letter_convert = to_key_press(letter, global_mobile_dictionary)
-        message += letter_convert + "·"
+        letter_convert_text = to_key_press_text(letter, global_mobile_dictionary)
+        message += letter_convert_text + "·"
     return message
 
 
 def clean_to_list(msg):
     msg_list = []
     msg_list = msg.split("·")
-    if msg_list[-1] == " ":
+    if msg_list[-1] == "":
         msg_list.pop()
-    return list(map(int, msg_list))
+    return msg_list
 
 
 def convert_number_to_text(msg):
-    msg_list_int = clean_to_list(msg)
-    *****************************************
-    letter_convert = to_key_press(letter, global_mobile_dictionary)
-    message += letter_convert + "·"
+    message = ""
+    msg_list = clean_to_list(msg)  # lista de números
+    for number in msg_list:
+        letter_convert_number = to_key_press_number(number, global_mobile_dictionary)
+        message += letter_convert_number
     return message
 
 
 if __name__ == "__main__":
+    MODE = ""
+
     while True:
-        next_input = input("Entry a message or entry a code: ")
+        option = input(
+            "\033[93mElige una de las funciones:\n1-Texto\n2-Código\033[0m\n"
+        )
+        if option == "1" or option == "2":
+            MODE = option
+            break
+
+    while True:
+        next_input = input("Introduce la cadena: ")
         if next_input == "":
             break
-        if int(next_input[0]) is True:
+        if MODE == "2":
             print(convert_number_to_text(next_input))
-        print(convert_text_to_number(next_input))
+        else:
+            print(convert_text_to_number(next_input.upper()))
