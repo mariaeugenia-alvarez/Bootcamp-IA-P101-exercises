@@ -1,6 +1,6 @@
 def solution(entry):
 
-    if entry ==3:
+    if entry == 3:
         result = "triangulo"
     elif entry == 4:
         result = "cuadrado"
@@ -18,7 +18,4 @@ def solution(entry):
         result = "decagono"
     else:
         result = "error: número fuera de rango"
-    return  result
-    
-
-
+    return result

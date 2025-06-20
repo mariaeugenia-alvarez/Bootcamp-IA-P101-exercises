@@ -6,7 +6,4 @@ def solution(entry):
         result = "ambiguous"
     else:
         result = "consonant"
-    return  result
-    
-
-
+    return result

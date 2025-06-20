@@ -1,10 +1,11 @@
 from src.lists.palindrome.solution import solution
 
+
 def test_solution():
-    #Test case 
-    assert solution("oso") == True
-    assert solution("reconocer") == True
-    assert solution("niña") == False
-    assert solution("alla") == True
-    assert solution("") == False
-    assert solution("Alla") == True
+    # Test case
+    assert solution("oso") is True
+    assert solution("reconocer") is True
+    assert solution("niña") is False
+    assert solution("alla") is True
+    assert solution("") is False
+    assert solution("Alla") is True

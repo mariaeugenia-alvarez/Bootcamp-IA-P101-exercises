@@ -1,13 +1,10 @@
-def solution(profile,hour):
+def solution(profile, hour):
 
     if profile == "admin":
         return True
-    elif profile == "usuario" and (8<=hour<=20):
+    if profile == "usuario" and (8 <= hour <= 20):
         return True
-    elif profile == "invitado" and (10<=hour<=16):
+    if profile == "invitado" and (10 <= hour <= 16):
         return True
-    else:
-        return False
-    
 
-
+    return False
