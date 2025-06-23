@@ -24,24 +24,6 @@ def test_solution():
         "B",
     ]
     assert get_points(1, "RR", global_scrabble_dictionary) == 8
-    assert score("PERRO", global_scrabble_dictionary) == (
-        13,
-        {
-            "E": 1,
-            "O": 1,
-            "P": 1,
-            "RR": 1,
-        },
-    )
-    assert score("CONCHA", global_scrabble_dictionary) == (
-        11,
-        {"A": 1, "C": 1, "CH": 1, "N": 1, "O": 1},
-    )
-    assert score("PORRO", global_scrabble_dictionary) == (
-        13,
-        {
-            "P": 1,
-            "O": 2,
-            "RR": 1,
-        },
-    )
+    assert score("PERRO", global_scrabble_dictionary) == 13
+    assert score("CONCHA", global_scrabble_dictionary) == 11
+    assert score("PORRO", global_scrabble_dictionary) == 13

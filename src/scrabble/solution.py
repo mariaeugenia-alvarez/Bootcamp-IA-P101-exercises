@@ -58,7 +58,7 @@ def score(word, scrabble_dictionary):
             new_word = remove(new_word, key)
         else:
             continue
-    return total_points, my_dict
+    return total_points
 
 
 if __name__ == "__main__":
