@@ -1,4 +1,4 @@
-from src.sentences.if_even.solution import solution
+from sentences.if_even.solution import solution
 
 
 def test_solution():

@@ -1,4 +1,4 @@
-from src.smart_compress.solution import accumulate, chain_compress
+from smart_compress.solution import accumulate, chain_compress
 
 
 def test_solution():

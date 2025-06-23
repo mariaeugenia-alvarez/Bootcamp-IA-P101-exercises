@@ -1,4 +1,4 @@
-from src.sentences.access.solution import solution
+from sentences.access.solution import solution
 
 
 def test_solution():

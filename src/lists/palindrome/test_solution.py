@@ -1,4 +1,4 @@
-from src.lists.palindrome.solution import solution
+from lists.palindrome.solution import solution
 
 
 def test_solution():

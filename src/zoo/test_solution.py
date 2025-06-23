@@ -1,4 +1,4 @@
-from src.zoo.solution import is_not_valid_input, get_invoice
+from zoo.solution import is_not_valid_input, get_invoice
 
 
 def test_solution():

@@ -1,4 +1,4 @@
-from src.lists.sum_all_char.solution import solution
+from lists.sum_all_char.solution import solution
 
 
 def test_solution():

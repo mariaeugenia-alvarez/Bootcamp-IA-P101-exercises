@@ -1,4 +1,4 @@
-from src.cesar_encode.solution import (
+from cesar_encode.solution import (
     encrypt,
     transpose,
     to_numbers,

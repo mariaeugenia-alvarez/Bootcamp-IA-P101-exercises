@@ -1,4 +1,4 @@
-from src.lists.average_list.solution import solution
+from lists.average_list.solution import solution
 
 
 def test_solution():

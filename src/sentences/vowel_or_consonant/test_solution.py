@@ -1,4 +1,4 @@
-from src.sentences.vowel_or_consonant.solution import solution
+from sentences.vowel_or_consonant.solution import solution
 
 
 def test_solution():

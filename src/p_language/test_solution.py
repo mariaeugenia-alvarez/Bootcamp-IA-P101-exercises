@@ -1,4 +1,4 @@
-from src.p_language.solution import convert_char, p_sentence
+from p_language.solution import convert_char, p_sentence
 
 
 def test_solution():

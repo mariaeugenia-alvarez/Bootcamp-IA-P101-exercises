@@ -1,4 +1,4 @@
-from src.temporal_data.solution import numbers_incremental_series, index_difference
+from temporal_data.solution import numbers_incremental_series, index_difference
 
 
 def test_solution():
