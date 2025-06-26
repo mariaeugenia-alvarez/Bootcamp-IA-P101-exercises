@@ -7,6 +7,6 @@ def get_price_v2(age):
 
 
 def generate_get_price_theater():
-    if 2 == 2:
+    if 1 == 2:
         return get_price_v2
     return get_price
