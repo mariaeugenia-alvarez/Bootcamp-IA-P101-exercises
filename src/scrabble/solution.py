@@ -28,12 +28,12 @@ global_scrabble_dictionary = {
 }
 
 
-def substring(str, target):
-    return str.count(target)
+def substring(strin, target):
+    return strin.count(target)
 
 
-def remove(str, target):
-    return str.replace(target, "")
+def remove(strin, target):
+    return strin.replace(target, "")
 
 
 def get_sorted_keys(scrabble_dictionary):
@@ -68,6 +68,6 @@ if __name__ == "__main__":
         if next_input == "":
             break
         print(
-            "La puntuación y cantidades de la palabra son: ",
+            "La puntuación de la palabra es: ",
             score(next_input, global_scrabble_dictionary),
         )
