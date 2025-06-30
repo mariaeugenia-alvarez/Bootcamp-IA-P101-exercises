@@ -10,11 +10,19 @@ def to_cesar(car, d, abc):
     return new_car
 
 
-def cesar(cadena, d, abc=abecedario):
+def createCesar(car, abc):
+    return to_cesar(car, 2, abc)
+
+
+def cesar(cadena, fx):
     result = ""
     for car in cadena:
-        result += to_cesar(car, d, abc)
+        result += fx(car)
     return result
+
+
+def cifrar(cadena):
+    return cesar(cadena, createCesar)
 
 
 if __name__ == "__main__":
@@ -22,6 +30,5 @@ if __name__ == "__main__":
         next_input = input("Entry a number or enter to end: ")
         if next_input == "":
             break
-        d = int(input("Entry distance: "))
 
-        print(cesar(next_input, d))
+        print(cifrar(next_input))
