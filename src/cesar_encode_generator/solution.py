@@ -17,7 +17,7 @@ def createCesar(car, abc):
 def cesar(cadena, fx):
     result = ""
     for car in cadena:
-        result += fx(car)
+        result += fx(car, abecedario)
     return result
 
 
